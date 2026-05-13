@@ -60288,16 +60288,25 @@ s.L$=r
 s.F$=0
 q.ap()},
 z8(a){return a==null?"":""+A.bL(a)+"-"+B.p.f5(B.l.k(A.c4(a)),2,"0")+"-"+B.p.f5(B.l.k(A.dh(a)),2,"0")},
-ayR(a){var s,r,q,p,o,n,m,l=this
-if(l.dx)l.M(new A.aQ6(l))
-else if(l.d.gU().f7()){s=A.ar(a,t.K)
-r=l.a.c
-q=l.f.a.a
-p=l.y.a.a
-o=l.z.a.a
-n=l.w.a.a
-m=l.Q.a.a
-s.CO(p,r,q,o,n,l.dy,m)}},
+ayR(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this
+if(c.dx)c.M(new A.aQ6(c))
+else if(c.d.gU().f7()){s=A.ar(a,t.K)
+r=c.a.c
+q=c.f.a.a
+p=c.y.a.a
+o=c.z.a.a
+n=c.w.a.a
+m=c.Q.a.a
+l=c.x.a.a
+k=c.r.a.a
+j=c.ax.a.a
+i=c.ay.a.a
+h=c.ch.a.a
+g=c.CW.a.a
+f=c.cx.a.a
+e=c.cy.a.a
+d=c.db.a.a
+s.CO(p,r,q,o,k,n,g,c.dy,d,m,f,e,i,j,h,l)}},
 FN(){var s=0,r=A.B(t.H),q=this,p,o
 var $async$FN=A.x(function(a,b){if(a===1)return A.y(b,r)
 for(;;)switch(s){case 0:s=2
@@ -65639,9 +65648,9 @@ s=B.af.dZ(A.a3(["components",d,"services",n,"additions",b,"carNumber",c,"type",o
 A.h9(A.bw("https://fixer-backend-rtw4.onrender.com/api/V1/repairing",0,null),s,$.ck).aY(new A.akL(this,d),t.P)},
 Ur(a){this.T(new A.X0())
 A.fv(A.bw("https://fixer-backend-rtw4.onrender.com/api/V1/repairing/getById/"+a,0,null),$.ck).aY(new A.al4(this,a),t.P).d_(new A.al5(this,a))},
-CO(a,b,c,d,e,f,g){return this.aSu(a,b,c,d,e,f,g)},
-aSu(a,b,c,d,e,a0,a1){var s=0,r=A.B(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f
-var $async$CO=A.x(function(a2,a3){if(a2===1){p.push(a3)
+CO(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p){return this.aSu(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p)},
+aSu(a,b,c,d,e,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0){var s=0,r=A.B(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f
+var $async$CO=A.x(function(b1,b2){if(b1===1){p.push(b2)
 s=q}for(;;)switch(s){case 0:o.T(new A.Is())
 q=3
 n=A.bjV("PUT",A.bw("https://fixer-backend-rtw4.onrender.com/api/V1/Garage/update/"+b,0,null))
@@ -65651,13 +65660,13 @@ m=A.u(i,i)
 if($.ck.i(0,"Authorization")!=null){h=$.ck.i(0,"Authorization")
 h.toString
 J.bi(m,"Authorization",h)}j.P(0,m)
-n.x.P(0,A.a3(["carNumber",c,"brand",a,"category",d,"color",e,"model",a1],i,i))
+n.x.P(0,A.a3(["carNumber",c,"brand",a,"category",d,"color",a0,"model",a4,"State",b0,"chassisNumber",e,"periodicRepairs",a8,"nonPeriodicRepairs",a7,"repairing",a9,"distances",a1,"motorNumber",a5,"nextRepairDate",a6,"lastRepairDate",a3],i,i))
 s=6
 return A.w(J.bgL(n),$async$CO)
-case 6:l=a3
+case 6:l=b2
 s=7
 return A.w(B.b5.a7N(l.w),$async$CO)
-case 7:k=a3
+case 7:k=b2
 if(l.b>=200&&l.b<300){A.be("Car updated successfully",B.bL)
 o.T(new A.It())
 o.y7(b)}else{A.be(k,B.aI)
